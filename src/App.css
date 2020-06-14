@@ -1,0 +1,35 @@
+:root {
+	--whiteWhite: #ffffff;
+	--darkGray: #696969;
+	--lightBlue: #009ffd;
+	--offWhite: #f3f3f3;
+	--mainDark: #232528;
+	--blackBlack: #000000;
+
+	--lightGray: #dcdcdc;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif !important;
+	background: var(--mainWhite) !important;
+	color: var(--mainDark) !important;
+}
+
+.text-title {
+	font-family: 'Josefin Sans', sans-serif;
+	/* font-family: 'Permanent Marker', cursive; */
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+}
+
+.text-blue {
+	color: var(--blackBlack);
+}
+
+.text-bright {
+	color: var(--blackBlack);
+}
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
