@@ -9,7 +9,7 @@ const ProductList = () => {
 		<React.Fragment>
 			<div className='py-5'>
 				<div className='container'>
-					<Title name='Our' title='Products' />
+					<Title name='Shop' title='All Plants' />
 					<div className='row'>
 						<ProductConsumer>
 							{(value) => {
