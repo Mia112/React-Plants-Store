@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { ProductWrapper } from './Styles';
+import { ButtonContainer } from './Button';
 import { ProductConsumer } from '../contaxt';
 import PropTypes from 'prop-types';
 export default class Product extends Component {
@@ -17,11 +18,15 @@ export default class Product extends Component {
 								<Link to='/details'>
 									<img src={img} alt='product' className='card-img-top' />
 								</Link>
+								<Link to='/details'>
+									<ButtonContainer>View details</ButtonContainer>
+								</Link>
 								<button
 									className='cart-btn'
 									disabled={inCart ? true : false}
 									onClick={() => {
 										value.addToCart(id);
+										value.openModal(id);
 									}}>
 									{inCart ? (
 										<p className='text-capitalize mb-0' disabled>
@@ -29,7 +34,7 @@ export default class Product extends Component {
 											added to cart
 										</p>
 									) : (
-										<i className='fas fa-cart-plus' />
+										'Add to Cart'
 									)}
 								</button>
 							</div>

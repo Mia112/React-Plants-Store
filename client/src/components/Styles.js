@@ -12,10 +12,24 @@ export const NavWrapper = styled.nav`
 		color: var(--blackBlack) !important;
 	}
 `;
+export const ModalContainer = styled.div`
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	#modal {
+		background: var(--offWhite);
+	}
+`;
 
 export const ProductWrapper = styled.div`
 	.card {
-		align-items: stretch;
+		align-items: stretch
 		border-color: transparent;
 		transition: all 1s linear;
 	}
@@ -60,7 +74,7 @@ export const ProductWrapper = styled.div`
 		transform: translate(0, 0);
 	}
 	.cart-btn:hover {
-		opacity: 0.7;
+		cursor: pointer;
 
 		color: var(--offWhite);
 	}
